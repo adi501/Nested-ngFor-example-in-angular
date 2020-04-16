@@ -1,0 +1,8 @@
+<h1>Nested ngFor example in angular</h1>
+ 
+  <div *ngFor="let list of prop">
+    <div><b>{{list.name}}</b></div>
+    <div *ngFor="let item of list.values">
+      value is :   {{item}}  
+    </div>
+  </div>
